@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navient Lawsuits Visualization</title>
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="grid-container fluid Headerbox">
+	<div class="large-12">
+		<h1>Navient Lawsuits Visualization: Maryland vs. Wisconsin</h1>
+			<h5>By Mira Beinart</h5>
+	</div>
+</div>
+<div class="grid-container">
+	<div class="grid-padding-x grid-margin-x">
+		<div class="large-8 medium-6 small-12 cell">
+			<p>The Navient lawsuit was very interesting to me, mostly because it's a subject I know very little on. Through reading the <a href="https://www.studentloanplanner.com/navient-lawsuit-updates/" target="_blank">article from Student Loan Planner</a>, I was able to learn more about the lawsuit itself, as well as how loan lawsuits work and the outcome of the case.</p>
+			<p>As I was looking through the data on the <a href="https://www.consumerfinance.gov/data-research/consumer-complaints/" target="_blank">Consumer Complaint Database</a> (and based on the instructions you gave us), I decided to compare <a href="https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/?company=Navient%20Solutions%2C%20LLC.&date_received_max=2024-04-17&date_received_min=2011-12-01&field=all&format=csv&no_aggs=true&product=Student%20loan&size=1318&sort=created_date_desc&state=MD&state=WI" target="_blank">data</a> from complaints from Maryland and Wisconsin. These states have similar populations, and each have a major Big 10 school.</p>
+			<p>Before I dive into the actual data (don't worry, I visualized it), let's discuss the populations of the two states at hand:</p>
+				<div class=box>
+					<p><strong>Maryland:</strong> 6,180,253 (19th largest in the nation)</p>
+					<p><strong>Wisconsin:</strong> 5,910,955 (20th largest in the nation)</p>
+					<p>Source: <a href="https://www.britannica.com/topic/largest-U-S-state-by-population" target="_blank">Britannica</a></p>
+				</div>
+			<p>Next, let's look at our first graph: the number of complaints per state, per year.</p>
+			<div class=center>
+				<iframe src="graphs/year.html" width="1000" height="500">
+					<p>Graph is not working.</p>
+				</iframe>
+			</div>
+			<p>The Consumer Financial Protection Bureau filed their lawsuit against Navient in 2017, which is consistent with the large increase in complaints. Both states saw a 68% increase in complaints from 2016 to 2017. Besides the spike in complaints in Maryland in 2014, both states follow similar trends in regards to the number of complaints. Throughout the years, Maryland tends to have 20-30 more complaints than Wisconsin.</p>
+			<p>On average, Maryland had about 80 complaints per month, whereas Wisconsin only had 29 complaints per month. Despite this large difference in complaint numbers, Maryland's population is only 4.45% larger than Wisconsin's.</p>
+			<p>To account for this difference, I hopped onto the <a href="https://www.census.gov/quickfacts/fact/table/MD,WI/EDU685222" target="_blank">U.S. Census Bureau.</a> While 32% of Wisconsinites (yes, this is what people from Wisconsin are called) have a Bachelor's degree or higher, 42.2% of Marylanders have a higher education degree. This can help to explain the difference in complaint numbers - if more people in Maryland are going to college, it makes sense that more people in Maryland require student loans, therefore more are likely to have complaints against Navient.</p>
+			<p>Next, let's look at the different types of complaints against Navient per state:</p>
+				<div class=center>
+				<iframe src="graphs/type.html" width="1000" height="500">
+					<p>Graph is not working.</p>
+				</iframe>
+				</div>
+			<p>This chart shows the different types of loans per state: federal student loan, non-federal student loan, and private student loan. According to <a href="https://www.marketwatch.com/guides/business/average-salary-by-state/" target="_blank">Market Watch</a>, the average annual salary in Maryland is $69,750, but only $56,120 in Wisconsin. This can help to explain why Wisconsin saw more federal student loans, whereas Maryland saw more private student loans.</p>
+			<p>Lastly, let's look at the type of closures the complaints received.</p>
+				<div class=center>
+				<iframe src="graphs/closure.html" width="1000" height="500">
+					<p>Graph is not working.</p>
+				</iframe>
+				</div>
+			<p>The majority of complaints in both states (93% in MD, 91% in WI) were closed with an explanation. However, Wisconsin saw more complaints closed with monetary relief than Maryland.</p>
+			</div>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="grid-container fluid footerStyle">
+		<div class="grid-x grid-padding-x">
+			<div class="large-12 cell">
+				<p>&copy; 2024 Mira Beinart</p>
+				<p>Do you like the colors I used? Fun fact: they're Navient's brand colors :)</p>
+			</div>
+		</div>
+	</div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/what-input.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
