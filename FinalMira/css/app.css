@@ -1,0 +1,140 @@
+.Headerbox {
+	background-color: #401201;
+	color: #EBF1F2;
+	text-align: center;
+	margin: 0 0 10px 0;
+	padding: 5px 20px 5px 20px;
+	margin: 0 0 20px 0;
+}
+
+.Image {
+	width: 70%;
+	margin: auto;
+}
+
+.StoryPic {
+	width: 50%;
+	margin: auto;
+}
+
+/* The CSS for the wouldbe pullquote lol
+blockquote {
+    margin: 0;
+}
+
+.pquote {
+    float: left;
+    width: 200px;
+    background: url(images/openquote.gif) top left no-repeat;
+    color: #030;
+    font-size: 26px;
+    line-height: 0.9;
+    font-style: italic;
+    padding: 13px;
+}
+
+
+.pquote p:first-letter {
+    font-size: 39px;
+    font-weight: bold;
+}
+*/
+figcaption {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 100;
+  	font-style: normal;
+}
+h1 {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+ 	font-weight: 400;
+}
+
+h4 {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 200;
+  	font-style: normal;
+}
+
+h5 {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 500;
+  	font-style: normal;
+  	color: #8C5230;
+}
+
+p {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+}
+
+ol {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+}
+li::marker {
+  color: #8C5230;
+}
+ul {
+	font-family: "Outfit", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: 400;
+  	font-style: normal;
+}
+.Chart {
+	border-style: solid;
+	border-color: #401201;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 10px 50px 10px 50px;
+	margin: auto;
+}
+.Footer {
+	color: #401201;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.CoffeeCard {
+	border-style: solid;
+	border-color: #401201;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 10px 10px 0 10px;
+	height: 550px;
+	margin: 10px;
+}
+
+
+
+
+
+
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 800
+
+.eb-garamond-<uniquifier> {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
